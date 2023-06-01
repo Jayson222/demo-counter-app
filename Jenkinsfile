@@ -10,5 +10,11 @@ pipeline{
                 git 'https://github.com/Jayson222/demo-counter-app.git'
             }
         }
+        stage('UNIT Testing'){
+
+            steps{
+                sh 'mvn test'
+            }
+        }
     }
 }
